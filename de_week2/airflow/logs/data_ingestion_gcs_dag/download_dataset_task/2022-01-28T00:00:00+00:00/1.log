@@ -1,0 +1,22 @@
+[2022-01-30 14:51:08,076] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2022-01-28T00:00:00+00:00 [queued]>
+[2022-01-30 14:51:08,338] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2022-01-28T00:00:00+00:00 [queued]>
+[2022-01-30 14:51:08,343] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-30 14:51:08,348] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-01-30 14:51:08,351] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-30 14:51:08,686] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2022-01-28 00:00:00+00:00
+[2022-01-30 14:51:08,789] {standard_task_runner.py:52} INFO - Started process 228 to run task
+[2022-01-30 14:51:08,976] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'download_dataset_task', 'scheduled__2022-01-28T00:00:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpd1h2cwfy', '--error-file', '/tmp/tmp_b59i077']
+[2022-01-30 14:51:08,997] {standard_task_runner.py:77} INFO - Job 31: Subtask download_dataset_task
+[2022-01-30 14:51:09,903] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.download_dataset_task scheduled__2022-01-28T00:00:00+00:00 [running]> on host 2c965601cbc2
+[2022-01-30 14:51:10,809] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-28T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-28T00:00:00+00:00
+[2022-01-30 14:51:10,845] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-01-30 14:51:10,873] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sS https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv > /opt/***/yellow_tripdata_2021-01.csv']
+[2022-01-30 14:51:11,027] {subprocess.py:85} INFO - Output:

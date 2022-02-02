@@ -1,0 +1,21 @@
+[2022-01-31 18:20:34,847] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_fhv_data.local_to_gcs_task scheduled__2019-07-01T00:00:00+00:00 [queued]>
+[2022-01-31 18:20:36,226] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_fhv_data.local_to_gcs_task scheduled__2019-07-01T00:00:00+00:00 [queued]>
+[2022-01-31 18:20:36,246] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-31 18:20:36,252] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-01-31 18:20:36,266] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-31 18:20:36,860] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2019-07-01 00:00:00+00:00
+[2022-01-31 18:20:37,050] {standard_task_runner.py:52} INFO - Started process 320 to run task
+[2022-01-31 18:20:37,209] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_fhv_data', 'local_to_gcs_task', 'scheduled__2019-07-01T00:00:00+00:00', '--job-id', '315', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_fhv_data.py', '--cfg-path', '/tmp/tmp0x2dwqp5', '--error-file', '/tmp/tmpc2m5zsw5']
+[2022-01-31 18:20:37,246] {standard_task_runner.py:77} INFO - Job 315: Subtask local_to_gcs_task
+[2022-01-31 18:20:40,032] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_fhv_data.local_to_gcs_task scheduled__2019-07-01T00:00:00+00:00 [running]> on host 943e1344cac5
+[2022-01-31 18:20:44,411] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-01-31 18:20:45,626] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_fhv_data
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-07-01T00:00:00+00:00
